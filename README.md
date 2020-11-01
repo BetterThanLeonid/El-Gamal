@@ -38,9 +38,9 @@
 <center><img src="image_2020-11-01_180852.png" alt="position"></center>
 
 Работу выполнил:
-Ильнур Гарипов, студент группы №41514c
-Университет ИТМО, ФБИТ
+
+Ильнур Гарипов, студент группы №42514c, Университет ИТМО, ФБИТ
 
 Контакты для связи:
-Почта - i_garipov@mail.ru
-telegram - @Better_than_Leonid
+- Почта - i_garipov@mail.ru
+- telegram - @Better_than_Leonid
