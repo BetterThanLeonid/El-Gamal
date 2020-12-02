@@ -35,7 +35,7 @@
 *Расшифрованный текст:*
 *Ильнур Гарипов*
 
-<center><img src="/LR1_RSAC_20_Garipov_Elgamal_cypher/image_2020-11-01_180852.png" alt="position"></center>
+<center><img src="изображение_2020-12-02_231259.png" alt="position"></center>
 
 Работу выполнил:
 
