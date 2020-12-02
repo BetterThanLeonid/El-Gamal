@@ -1,0 +1,34 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Home Page</title>
+        <link rel="stylesheet" type="text/css" href="/static/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <section id="content">
+                <form action="/" method="post">
+                    {% if auth_form == False %}
+                    <h1>Login Form</h1>
+                    {% elif auth_login == False %}
+                    <h1>Wrong Username</h1>
+                    {% elif auth_password == False %}
+                    <h1>Wrong Password</h1>
+                    {% endif %}
+                    <div>
+                        <input name="username" type="text" placeholder="Username" id="username"/>
+                    </div>
+                    <div>
+                        <input name="password" type="password" placeholder="Password" id="password"/>
+                    </div>
+                    <div>
+                        <input type="submit" value="Log in" />
+                        <a href="/database">View DB</a>
+                        <a href="/register">Register</a>
+                    </div>
+                    
+                </form><!-- form -->
+            </section><!-- content -->
+        </div><!-- container -->
+    </body>
+</html>

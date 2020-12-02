@@ -1,0 +1,29 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Check temporary code</title>
+        <link rel="stylesheet" type="text/css" href="/static/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <section id="content">
+                <form action="/check_temp_code/" method="post">
+                    {% if auth_form == False %}
+                    <h1>Temporary Code</h1>
+                    {% elif auth_code == False %}
+                    <h1>Wrong Code</h1>
+                    {% endif %}
+                    <p>{{ message }}</p>
+                    <div>
+                        <input name="temp_code" type="text" placeholder="Input temporary code" id="email"/>
+                    </div>
+                    <div>
+                        <input type="submit" value="Log in" />
+                        <a href="/database">View DB</a>
+                        <a href="/register">Register</a>
+                    </div>  
+                </form><!-- form -->
+            </section><!-- content -->
+        </div><!-- container -->
+    </body>
+</html>

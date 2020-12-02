@@ -1,0 +1,35 @@
+<html lang="en">
+    <head>
+        <meta charset="utf-8">
+        <title>Database</title>
+        <link rel="stylesheet" type="text/css" href="/static/style.css" />
+    </head>
+    <body>
+        <div class="container">
+            <section id="db">
+                <h1>Database</h1>
+                <table>
+                    <tr>
+                        <th>ID</th>
+                        <th>Username</th>
+                        <th>Password</th>
+                        <th>E-Mail</th>
+                    </tr>
+                    {% set users = user_list %}
+                    {% for user in user_list %}
+                        <tr>
+                            <td>{{ user[0] }}</td>
+                            <td>{{ user[1] }}</td>
+                            <td>{{ user[2] }}</td>
+                            <td>{{ user[4] }}</td>
+                        </tr>
+                    {% endfor %}
+                </table>
+                <div>
+                    <a href='/'>Home Page</a>
+                </div>
+                <br><br>
+            </section><!-- content -->
+        </div><!-- container -->
+    </body>
+</html>
